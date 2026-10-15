@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+        color-scheme: dark;
+
+        --bg-primary: var(--color-zinc-950);
+        --text-primary: var(--color-zinc-50);
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            color-scheme: light;
+            --bg-primary: var(--color-zinc-50);
+            --text-primary: var(--color-zinc-900);
+        }
+    }
+    html {
+        font: 18px/145% sans-serif;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: var(--color-bg-primary);
+        color: var(--color-text-primary);
+        font-family: var(--font-body);
+    }
+}
+
+:root {
+    --color-brand: oklch(0.65 0.24 16.93);
+
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f8fafc; /* slate-50 */
+
+    --color-text-primary: #0f172a; /* slate-900 */
+    --color-text-secondary: #475569; /* slate-600 */
+
+    --color-card-bg: #ffffff;
+    --color-card-text: #0f172a;
+
+    --color-btn-bg: var(--color-brand);
+    --color-btn-text: #ffffff;
+
+    --font-heading: "Inter", sans-serif;
+    --font-body: "Roboto", sans-serif;
+
+    --radius-card: 0.75rem;
+    --radius-btn: 0.5rem;
+
+    /* Tailwind v4 preferira odvajanje boje od shorthand bordera za lakše interpolacije */
+    --color-border-standard: #e2e8f0; /* slate-200 */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg-primary: #0f172a; /* slate-900 */
+        --color-bg-secondary: #1e293b; /* slate-800 - stvara ugodan kontrast unutar aplikacije */
+
+        --color-text-primary: #f8fafc; /* slate-50 */
+        --color-text-secondary: #94a3b8; /* slate-400 */
+
+        --color-card-bg: #1e293b;
+        --color-card-text: #f8fafc;
+
+        --color-border-standard: #334155; /* slate-700 - suptilne linije u tamnom načinu */
+    }
+}
+
+@theme {
+    --color-brand: var(--color-brand);
+
+    --color-bg-primary: var(--color-bg-primary);
+    --color-bg-secondary: var(--color-bg-secondary);
+
+    --color-text-primary: var(--color-text-primary);
+    --color-text-secondary: var(--color-text-secondary);
+
+    --color-card-bg: var(--color-card-bg);
+    --color-card-text: var(--color-card-text);
+
+    --color-btn-bg: var(--color-btn-bg);
+    --color-btn-text: var(--color-btn-text);
+
+    --color-border-standard: var(--color-border-standard);
+
+    --font-heading: var(--font-heading);
+    --font-body: var(--font-body);
+
+    --radius-card: var(--radius-card);
+    --radius-btn: var(--radius-btn);
+
+    --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+    --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+}
+
+body {
+    @apply bg-bg-primary text-text-primary antialiased selection:bg-brand selection:text-white;
+    perspective: 1000px;
+}
