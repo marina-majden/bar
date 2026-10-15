@@ -5,9 +5,3 @@ export function Loader() {
         </div>
     );
 }
-
-export function HeroBackground() {
-    return (
-        <div className='absolute inset-0 -z-10 bg-linear-45 from-bg-secondary to-bg-primary opacity-60'></div>
-    );
-}
