@@ -1,8 +1,3 @@
-/* ========================================================
-   BarMen — Master Brand & Content Data
-   Preserving all original content + luxury metadata expansions
-   ======================================================== */
-
 // Import local cocktail images
 import cloverClubImg from "./assets/cocktails/Clover-Club-Cocktail.jpg";
 import elixirImg from "./assets/cocktails/Elixir-Cocktail.jpg";
@@ -68,7 +63,7 @@ export const siteData = {
         "Oasis",
     ],
 
-    // Featured Hero Interactive Cocktails (grounded in the 5 reference recipe posters)
+    // Featured Hero Interactive Cocktails
     featuredCocktails: [
         {
             id: "gin-tonic",
@@ -291,8 +286,8 @@ export const siteData = {
             "Mi smo tvrtka koja donosi vrhunsku koktel avanturu izravno na vašu lokaciju! Naš pokretni cocktail bar sadrži sve što vam treba na jednom mjestu – od premium sastojaka do profesionalne opreme, pružajući jedinstveno iskustvo koje podiže svaki event na višu razinu. Dolazimo gdje god želite i prilagođavamo se svakom prostoru, bilo da je riječ o elegantnom vjenčanju, korporativnom eventu, privatnoj proslavi, festivalu, rođendanu, team buildingu ili bilo kojoj drugoj posebnoj prigodi. S više od 80 vrsta koktela i bezbroj mogućnosti personalizacije, jamčimo da će svaki gost pronaći svoj savršeni okus. Naš setup izgleda zapanjujuće i besprijekorno se uklapa u bilo koji ambijent, dok naši iskusni barmeni ne samo da pripremaju vrhunske koktele, već i stvaraju nezaboravne trenutke uz interakciju, show i besprijekornu uslugu.",
         stats: [
             { value: "80+", label: "Receptura koktela" },
-            { value: "300", label: "Maksimalan broj gostiju" },
-            { value: "100%", label: "Mobilnost po RH" },
+            { value: "300", label: "Mogući broj gostiju" },
+            { value: "100%", label: "Mobilnost po cijeloj Hrvatskoj" },
             { value: "5/5", label: "Zadovoljstvo klijenata" },
         ],
     },
@@ -311,19 +306,19 @@ export const siteData = {
         ],
         specs: [
             {
-                title: "2 Veličine Šanka",
+                title: "Izbor različitih veličina i oblika šanka",
                 desc: "Kompaktni (1.5m) za intimne zabave i prošireni (3m) za veće proslave do 300 uzvanika.",
             },
             {
-                title: "Magnetski Paneli",
+                title: "Magnetski paneli",
                 desc: "Potpuno brendiranje prednje i bočnih fronti vašim logotipom, monogramom ili grafikom eventa.",
             },
             {
-                title: "Profesionalna Higijena",
+                title: "Najviši standard higijene",
                 desc: "Integrirani sustavi za pranje čaša, neovisni dovod/odvod vode i rashladne jedinice.",
             },
             {
-                title: "Brza Montaža",
+                title: "Brza montaža",
                 desc: "Postavljanje i puni operativni pogon unutar samo 60 minuta od dolaska na lokaciju.",
             },
         ],
@@ -332,7 +327,7 @@ export const siteData = {
     events: {
         title: "Želite svoj event učiniti nezaboravnim?",
         subtitle:
-            "Organiziramo sve vrste događanja – od rođendana do vjenčanja, stvarajući nezaboravne trenutke!",
+            "Uljepšat ćemo sve vaše važne događaje – od rođendana do vjenčanja, i omogućiti da nazdravite sa stilom!",
         categories: [
             {
                 name: "Vjenčanja",
@@ -359,7 +354,7 @@ export const siteData = {
                 desc: "Elegantni visoki barski stolovi s navlakama za upotpunjavanje cocktail zone.",
             },
             {
-                name: "Eventi & Festivali",
+                name: "Eventi & festivali",
                 desc: "Visokoproduktivni cocktail šank spreman za brzo posluživanje velikog broja gostiju.",
             },
             {
@@ -377,19 +372,19 @@ export const siteData = {
             "Kako bi što više povećali iskustvo naših kupaca, koristimo Flavour Blaster. On nam omogućava stvaranje mirisnih mjehurića na koktelima, te ih čini vizualno spektakularnijima uz dodavanje dodatnih slojeva arome. Tako naši klijenti mogu osjetiti nove dimenzije okusa čineći koktel doživljaj posebnim i nezaboravnim. Prilikom dogovora za event, nudimo degustaciju koktela kako bismo olakšali odabir savršene cocktail karte za klijentov događaj. U konačnici kao dodatnu pogodnost, nudimo besplatnu rundu shootera po odabiru barmena, čime svaki događaj dobiva poseban završni dojam. Naš tim specijaliziran je za organizaciju evenata malih i srednjih kapaciteta, do 300 osoba, s mogućnošću djelovanja diljem cijele Hrvatske.",
         perks: [
             {
-                title: "Flavour Blaster™ Tehnologija",
+                title: "Flavour Blaster™ tehnologija",
                 desc: "Mirisni dimni mjehurići s aromama citrusa, vanilije, ružmarina ili bobičastog voća koji pucaju pred gostom.",
             },
             {
-                title: "Besplatna Degustacija",
+                title: "Besplatna degustacija",
                 desc: "Prije vašeg eventa isprobavamo kombinacije i zajedno biramo cocktail kartu idealnu za vaše goste.",
             },
             {
-                title: "Gratis Runda Shootera",
+                title: "Gratis runda shootera",
                 desc: "Poseban dar našeg show barmena za vrhunac večeri – spektakularna runda craft shootera za sve uzvanike.",
             },
             {
-                title: "Kapacitet do 300 Osoba",
+                title: "Kapacitet do 300 osoba",
                 desc: "Specijalizirani za privatne i korporativne evente malih i srednjih formata s punom posvećenošću detaljima.",
             },
         ],
@@ -427,7 +422,7 @@ export const siteData = {
             caption: "Gala koktel doček mladenaca u mediteranskom ambijentu",
         },
         {
-            title: "Pjenušavi Spritz Trenuci",
+            title: "Pjenušavi Spritz trenuci",
             category: "Kokteli",
             url: "https://images.unsplash.com/photo-1560512823-829485b8bf24?q=80&w=1200&auto=format&fit=crop",
             caption: "Osvježavajući aperitivi za ljetne korporativne večeri",
@@ -443,6 +438,6 @@ export const siteData = {
             location: "Zagreb & cijela Hrvatska",
             workingHours: "Dostupni 0-24 za dogovore i upite",
         },
-        copyright: "Copyright © 2026 Barmenik | Powered by Nolu Design",
+        copyright: "Copyright © 2026 Barmenik | Powered by Web Mashina",
     },
 };
